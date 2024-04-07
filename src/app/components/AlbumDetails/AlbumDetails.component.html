@@ -1,1 +1,36 @@
-<p>AlbumDetails works!</p>,
+<div class="flex items-center gap-2">
+    <lucide-icon name="arrow-left" size="32" class="cursor-pointer align-sub" routerLink="/albums"/>
+    <p class="text-2xl font-bold">Série {{ album?.id }}</p>
+</div>
+
+<div class="flex items-center justify-between mb-4">
+    <div
+        *ngIf="album"
+        class="m-4"
+    >
+        <p>Contenu: {{ album.count }} photos</p>
+        <p>Position: {{ album.position }}</p>
+        <p>Pellicule: {{ StocksService.getFromID(album.stockID)?.name }}</p>
+        <p>Caméra: {{ album.camera }}</p>
+        <p class="italic">{{ album.description }}</p>
+    </div>
+    <img
+        *ngIf="album"
+        class="border rounded-lg shadow-md max-h-40"
+        src="../../../assets/stocks/{{ album.stockID }}.jpg"
+        [alt]="album.stockID"
+    >
+</div>
+
+<div
+    *ngIf="album"
+    class="grid items-center justify-center grid-cols-3 gap-4"
+>
+    @for (uri of AlbumsService.getPhotosURIs(album); track $index) {
+        <img
+            class="border rounded-lg shadow-md"
+            [src]="uri"
+            alt="{{album.id}}-{{$index}}"
+        >
+    }
+</div>
