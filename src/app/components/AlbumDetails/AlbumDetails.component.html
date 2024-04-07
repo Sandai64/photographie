@@ -24,11 +24,11 @@
 
 <div
     *ngIf="album"
-    class="grid items-center justify-center grid-cols-3 gap-4"
+    class="items-center justify-center gap-4 columns-4"
 >
     @for (uri of AlbumsService.getPhotosURIs(album); track $index) {
         <img
-            class="border rounded-lg shadow-md"
+            class="mx-4 mb-4 border rounded-lg shadow-md"
             [src]="uri"
             alt="{{album.id}}-{{$index}}"
         >
