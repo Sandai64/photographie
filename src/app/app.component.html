@@ -1,4 +1,4 @@
-<p class="mb-2 text-2xl font-bold">Toutes les photos (vrac)</p>
+<!-- <p class="mb-2 text-2xl font-bold">Toutes les photos (vrac)</p>
 <i class="pb-4 italic">Utilisez les boutons "Pellicules" & "Séries" dans la barre de navigation pour affiner votre recherche.</i>
 
 <div class="grid grid-cols-4 gap-4 mt-4">
@@ -10,4 +10,20 @@
             </div>
         }
     }
+</div> -->
+
+<!-- Navbar -->
+<div class="fixed top-0 flex justify-between w-full px-4 py-2 bg-white shadow-md select-none">
+    <div class="flex gap-2 text-xl divide-x cursor-pointer" routerLink="/">
+      <h1 class="font-bold">Erwan EGASSE</h1>
+      <h2 class="pl-2">Photographie</h2>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <a routerLink="/albums" class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Pellicules</a>
+      <p class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Séries</p>
+    </div>
+</div>
+<div class="px-8 pb-8 mt-16">
+    <router-outlet></router-outlet>
 </div>
