@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { AlbumsComponent } from './components/Albums/Albums.component';
 import { StocksComponent } from './components/Stocks/Stocks.component';
 import { NotFoundComponent } from './components/NotFound/NotFound.component';
