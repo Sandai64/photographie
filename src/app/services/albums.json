@@ -30,5 +30,21 @@
         "count": 23,
         "camera": "Canon EOS 3000",
         "description": "Lyon, & cie. Avec un belvédère aussi."
+    },
+    {
+        "id": "24P02",
+        "stockID": "KPORTRA800",
+        "position": "Lyon, France",
+        "count": 21,
+        "camera": "Canon EOS 3000",
+        "description": "Retour du belvédère."
+    },
+    {
+        "id": "24P03",
+        "stockID": "LCPURPLE",
+        "position": "Lyon, France",
+        "count": 19,
+        "camera": "Canon EOS 3000",
+        "description": "Un peu plus expérimental que d'habitude."
     }
 ]
