@@ -1,0 +1,18 @@
+[
+    {
+        "id": "23H01",
+        "stockID": "CS800T",
+        "position": "Lyon, France",
+        "count": 8,
+        "camera": "Agfa 35mm Reusable Compact Camera",
+        "description": "Ma première pellicule Argentique prise avec un appareil photo jetable, la plupart des photos dans cette série sont illisibles. Elle tient cependant une petite place dans mon coeur."
+    },
+    {
+        "id": "24H01",
+        "stockID": "ILXP2",
+        "position": "Lyon, France",
+        "count": 26,
+        "camera": "Canon EOS 3000",
+        "description": "Deuxième pellicule, noir & blanc cette fois-ci. Avec Cédric aussi."
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "CS800T",
+        "name": "CineStill 800T"
+    },
+    {
+        "id": "KUMAX400",
+        "name": "Kodak ULTRAMAX 400"
+    },
+    {
+        "id": "KGOLD200",
+        "name": "Kodak Gold 200"
+    },
+    {
+        "id": "KPORTRA800",
+        "name": "Kodak Portra 800"
+    },
+    {
+        "id": "LCPURPLE",
+        "name": "LomoChrome Purple XR 100-400"
+    },
+    {
+        "id": "LCEARLGREY",
+        "name": "LomoChrome Earl Grey 100"
+    },
+    {
+        "id": "LCCOLOR92",
+        "name": "LomoChrome Color '92 400"
+    },
+    {
+        "id": "ILXP2",
+        "name": "Ilford XP2 Super 400"
+    }
+]
