@@ -1,6 +1,6 @@
 <p class="pb-4 text-2xl font-bold">Toutes les séries</p>
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-5 gap-4">
     @for (album of albums; track $index) {
         <div
             routerLink="/album/{{ album.id }}"

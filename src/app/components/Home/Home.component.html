@@ -1,0 +1,11 @@
+<p class="pb-4 text-2xl font-bold">Toutes les photos (vrac)</p>
+
+<p class="mb-4 italic select-none">Utilisez les boutons Pellicules & Séries ci-dessus pour affiner votre recherche.</p>
+
+<div class="items-center justify-center gap-4 columns-5">
+    @for (album of albums; track $index) {
+        @for (photo of AlbumsService.getPhotosURIs(album); track $index) {
+            <img class="m-4 mx-auto border rounded-lg shadow-md max-h-60" [src]="photo" alt="{{album.id}}-{{$index}}">
+        }
+    }
+</div>

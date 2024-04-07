@@ -1,28 +1,11 @@
-<!-- <p class="mb-2 text-2xl font-bold">Toutes les photos (vrac)</p>
-<i class="pb-4 italic">Utilisez les boutons "Pellicules" & "Séries" dans la barre de navigation pour affiner votre recherche.</i>
-
-<div class="grid grid-cols-4 gap-4 mt-4">
-    @for (album of albums; track $index) {
-        @for (img of AlbumsService.getPhotosURIs(album); track $index) {
-            <div class="flex flex-col items-center justify-center gap-2">
-                <img class="rounded shadow max-h-96" [src]="img" alt="Série {{ album.id }} ({{ $index }})">
-                <p class="text-sm italic">Série {{ album.id }} ({{ $index }})</p>
-            </div>
-        }
-    }
-</div> -->
-
 <!-- Navbar -->
-<div class="fixed top-0 flex justify-between w-full px-4 py-2 bg-white shadow-md select-none">
-    <div class="flex gap-2 text-xl divide-x cursor-pointer" routerLink="/">
+<div class="fixed top-0 flex items-center w-full px-4 py-2 bg-white shadow-md select-none">
+    <div class="flex items-center gap-2 text-xl cursor-pointer" routerLink="/">
       <h1 class="font-bold">Erwan EGASSE</h1>
-      <h2 class="pl-2">Photographie</h2>
+      <h2 class="pl-2 pr-4 border-l">Photographie</h2>
     </div>
-
-    <div class="flex items-center gap-2">
-      <a routerLink="/stocks" class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Pellicules</a>
-      <a routerLink="/albums" class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Séries</a>
-    </div>
+    <a routerLink="/stocks" class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Pellicules</a>
+    <a routerLink="/albums" class="px-2 py-1 transition-colors rounded cursor-pointer hover:bg-gray-300">Séries</a>
 </div>
 <div class="px-8 pb-8 mt-16">
     <router-outlet></router-outlet>
