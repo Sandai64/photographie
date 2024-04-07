@@ -14,5 +14,21 @@
         "count": 26,
         "camera": "Canon EOS 3000",
         "description": "Deuxième pellicule, noir & blanc cette fois-ci. Avec Cédric aussi."
+    },
+    {
+        "id": "24H02",
+        "stockID": "KUMAX400",
+        "position": "Lyon, France",
+        "count": 24,
+        "camera": "Canon EOS 3000",
+        "description": "Quelques plans de Lyon, de la Confluence, Guillotière & de Fourvière."
+    },
+    {
+        "id": "24P01",
+        "stockID": "LCCOLOR92",
+        "position": "Lyon, France",
+        "count": 23,
+        "camera": "Canon EOS 3000",
+        "description": "Lyon, & cie. Avec un belvédère aussi."
     }
 ]
