@@ -1,21 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AlbumSchema, AlbumsService } from '../../services/albums.service';
-import { StocksService } from '../../services/stocks.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule, RouterLink],
   templateUrl: './Home.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent
-{
-  AlbumsService = AlbumsService;
-  StocksService = StocksService;
-
-  albums: Array<AlbumSchema> = AlbumsService.getAll();
-}
+export class HomeComponent {}
