@@ -1,6 +1,6 @@
 <p class="pb-4 text-2xl font-bold">Chercher par pellicules</p>
 
-<div class="grid items-center grid-cols-5 gap-4">
+<div class="grid items-center grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
     @for (stock of stocks; track $index) {
         <img routerLink="/stock/{{stock.id}}" class="w-64 transition-all border rounded-lg shadow-md cursor-pointer hover:-translate-y-2 hover:opacity-75" src="../../../assets/stocks/{{ stock.id }}.jpg" [alt]="stock.name">
     }

@@ -3,7 +3,7 @@
     <p class="text-2xl font-bold">Série {{ album?.id }}</p>
 </div>
 
-<div class="flex items-center justify-between mb-4">
+<div class="flex flex-col items-center justify-between mb-4 text-xs md:flex-row md:text-sm">
     <div
         *ngIf="album"
         class="m-4"
@@ -16,7 +16,7 @@
     </div>
     <img
         *ngIf="album"
-        class="border rounded-lg shadow-md max-h-40"
+        class="border rounded-lg shadow-md max-h-32 md:max-h-40"
         src="../../../assets/stocks/{{ album.stockID }}.jpg"
         [alt]="album.stockID"
     >
@@ -24,13 +24,16 @@
 
 <div
     *ngIf="album"
-    class="items-center justify-center gap-4 columns-4"
+    class="items-center justify-center gap-4 columns-1 md:columns-2 lg:columns-3 2xl:columns-4"
 >
     @for (uri of AlbumsService.getPhotosURIs(album); track $index) {
-        <img
-            class="mx-4 mb-4 border rounded-lg shadow-md"
-            [src]="uri"
-            alt="{{album.id}}-{{$index}}"
-        >
+        <div class="relative mx-4 mb-4 border rounded-lg shadow-md">
+            <img
+                class="rounded-lg"
+                [src]="uri"
+                alt="{{album.id}}-{{$index}}"
+            >
+            <p class="absolute bottom-0 left-0 px-2 py-1 font-mono text-xs text-white bg-black select-none rounded-s-lg">{{ album.id }}-{{ $index }}</p>
+        </div>
     }
 </div>
