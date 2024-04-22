@@ -4,11 +4,12 @@ import { StocksService } from '../../services/stocks.service';
 import { AlbumSchema, AlbumsService } from '../../services/albums.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
+import { DownloadButtonComponent } from '../ui/download-button/download-button.component';
 
 @Component({
   selector: 'app-stock-details',
   standalone: true,
-  imports: [CommonModule, LucideAngularModule, RouterLink],
+  imports: [CommonModule, LucideAngularModule, RouterLink, DownloadButtonComponent],
   templateUrl: './StockDetails.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

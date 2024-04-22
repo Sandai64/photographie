@@ -16,14 +16,17 @@
 
 <div class="items-center justify-center gap-4 mt-4 columns-1 md:columns-2 lg:columns-3 2xl:columns-4">
     @for (album of albums; track $index) {
-        @for (uri of AlbumsService.getPhotosURIs(album); track $index) {
+        @for (uri of AlbumsService.getPhotosURIs(album, true); track $index) {
             <div class="relative mx-4 mb-4">
                 <img
                     class="rounded-lg shadow-md"
                     [src]="uri"
                     alt="{{album.id}}-{{$index}}"
                 />
-                <p class="absolute bottom-0 left-0 px-2 py-1 font-mono text-xs text-white bg-black rounded-s-lg">{{ album.id }}-{{ $index }}</p>
+                <div class="absolute bottom-0 left-0 flex justify-between w-full px-2 py-1 font-mono text-xs text-white bg-black rounded-b-lg">
+                    <p>{{ album.id }}-{{ $index }}</p>
+                    <app-download-button [albumID]="album.id" [index]="$index"/>
+                </div>
             </div>
         }
     }

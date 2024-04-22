@@ -4,7 +4,7 @@
     @for (album of albums; track $index) {
         <div
             routerLink="/album/{{ album.id }}"
-            style="background-image: url('../../../assets/albums/{{ album.id }}/0.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"
+            style="background-image: url('../../../assets/albums/preview/{{ album.id }}/0.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;"
             class="flex items-center justify-center h-40 transition-all border rounded-lg shadow-md cursor-pointer hover:opacity-75 hover:-translate-y-2"
         >
             <p class="w-full px-2 py-1 font-mono text-sm text-center text-white bg-black">{{ album.id }} ({{ StocksService.getFromID(album.stockID)?.name }}) · {{ album.count }} images</p>
