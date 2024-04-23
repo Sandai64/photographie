@@ -10,7 +10,7 @@ cp -r ./original/ ./preview/
 echo "folder structure OK"
 echo "----- STARTING ALBUM COMPRESSION -----"
 
-find ./preview/ -type f -name "*.jpg" -exec jpegoptim --strip-all --max=20 --size=10% {} \;
+find ./preview/ -type f -name "*.jpg" -exec jpegoptim --strip-all --max=50 --size=20% {} \;
 
 echo "----- DONE -----"
 echo "final folder sizes :"
